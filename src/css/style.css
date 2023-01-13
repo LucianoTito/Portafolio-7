@@ -1,0 +1,479 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-margin-top: 25px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --color-negro:#020403;
+    --color-gris:#ADADAD;
+    --color-claro: #FFFFFF;
+}
+
+body{
+    background: var(--color-negro);
+
+}
+
+/*MENÚ*/
+.contenedor-header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    right: -250px;
+    z-index: 100;
+}
+
+.contenedor-header header {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 25px 10px;
+    
+
+}
+
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+    
+}
+
+.contenedor-header header ul li a {
+    
+    font-size: 18px;
+    text-align: none;
+    color: var(--color-gris);
+    margin: 0 25px;
+    padding: 3px;
+    transition: 2s;
+    text-decoration: none;
+
+}
+
+.contenedor-header header nav ul li a:hover {
+    color: #ffd13b
+}
+
+.nav-responsive {
+    background-color: #1f1c1c;
+    color: var(--color-gris);
+    padding:  5px 10px;
+    border-radius: 5px;
+    max-width: 60px;
+    margin-right: 0px;
+    margin-left: 25px;
+    cursor: pointer;
+    display: none;   
+}
+
+/* SECCIÓN HOME */
+.home{
+    height:100vh ;
+    color: var(--color-claro);
+    display: flex;
+    align-items: center;
+}
+
+.home .contenido-banner{  
+   background-color: var(--color-negro);
+   max-width: 700px;
+   margin: auto;
+   text-align: center;
+   padding-top: 100px;
+   
+}
+.home .contenido-banner .img-desing{
+    
+    margin-top: 40px;
+    border: 5px solid #ffd13b;
+    display: block;
+    width: 30%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.home .contenido-banner h2{
+    margin-top: 30px;
+    font-size: 35px;
+    color: var(--color-gris);
+
+}
+
+.home .contenido-banner h1{
+    margin-top: 18px;
+    font-size: 60px;
+
+}
+
+.home .contenido-banner .redes a{
+    color: var(--color-claro);
+    display: inline-block;
+    text-decoration: none;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 55px 45px;
+    font-size: 40px;
+    transition: .5s;
+}
+
+.home .contenido-banner .redes a:hover{
+    transform: scale(1.5);
+}
+
+/*ACERCA DE MÍ */
+
+
+.acerca-de-mi{
+    color: var(--color-claro);
+    padding: 10px 10px;
+    margin-top: 50px;
+    
+   
+}
+.acerca-de-mi .contenido-seccion{
+    max-width: 1100px ;
+    margin: auto;
+    text-align: center;
+}
+
+.acerca-de-mi h2{
+    font-size: 45px;
+    font-weight: 420;
+    padding: 15px ;
+}
+
+.acerca-de-mi .contenido-seccion p {
+   font-size: 18px;
+   line-height: 22px;
+   margin-bottom: 30px;
+   color: var(--color-gris);
+}
+
+.acerca-de-mi .contenido-seccion p span{
+    color: var(--color-claro);
+}
+
+/*MIS HABILIDADES */
+#mis-habilidades{
+    color: var(--color-claro);
+    padding: 100px 15px ;
+    text-align: center;
+    
+}
+#mis-habilidades .titulo-seccion{
+    font-size: 45px;
+    font-weight: 420;
+    padding: 15px ;
+   
+}
+
+#mis-habilidades .fila{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    max-width: 500px;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+#mis-habilidades .fila .habilidades{
+    width: 250px;
+    padding: 30px;
+    transition: .5s;
+    
+}
+
+#mis-habilidades .fila .habilidades:hover{
+    box-shadow: 5px 5px 10px var(--color-claro), -5px -5px 10px var(--color-claro);
+}
+
+#mis-habilidades .fila .habilidades h4{
+    transition: .5s;
+    font-size: 18px;
+    margin-bottom: 5px;
+    
+}
+
+#mis-habilidades .fila .habilidades .icono{
+    display: inline-block;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    background-color: #1f1c1c;
+    padding: 18px;
+    margin-bottom: 20px;
+}
+
+/* EXPERIENCIA */
+
+#experiencia{
+    color: var(--color-claro);
+    text-align: center;
+    
+}
+
+.experiencia h2 {
+    font-size: 45px;
+}
+
+table {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 18px;
+}
+td {
+    border-bottom: 1px solid var(--color-gris);
+    padding-left: 20px;
+    padding-right: 100px;
+}
+
+.company {
+    color: var(--color-gris);
+}
+
+.last_border{
+    border: none;
+}
+
+.charge{
+    font-weight: bold;
+}
+
+/* PORTFOLIO */
+
+.portfolio {
+  color: var(--color-claro);
+  padding: 50px 20px;
+}
+
+.portfolio .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.portfolio  h2 {
+    font-size: 45px;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.portfolio .galeria{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+  
+}
+
+.portfolio .galeria .proyecto {
+    position: relative;
+    max-width: 310px;
+    height:fit-content;
+    cursor: pointer;
+    
+
+}
+
+
+
+.portfolio .galeria .proyecto img {
+    width: 100%;
+    display: block;
+
+}
+
+.portfolio .galeria .proyecto .overlay{
+ position: absolute;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ text-align: center;
+ background: linear-gradient(rgba(40, 43, 43, 0.8), rgba(47, 51, 50, 0.8));
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ transition: 2s;
+ font-size: 18px;
+ letter-spacing: 3px;
+ opacity: 0;
+}
+
+.portfolio .galeria .proyecto .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+
+}
+
+.portfolio .galeria .proyecto .overlay:hover{
+    opacity: 1;
+
+}
+
+.portfolio .galeria .proyecto .overlay:hover h3{
+    margin-bottom: 0;
+}
+
+/* CONTACTO */
+
+
+#contacto{
+    color: var(--color-claro);
+    padding: 100px 15px ;
+    text-align: center;
+    
+}
+#contacto .titulo-seccion{
+    font-size: 45px;
+    font-weight: 420;
+    padding: 15px ;
+   
+}
+
+#contacto .fila{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    max-width: 500px;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+#contacto .fila .contacto-data{
+    width: 50%;
+    padding: 30px;
+    transition: .5s;
+    
+}
+
+#contacto .fila .contacto-data:hover{
+    box-shadow: 5px 5px 10px var(--color-claro), -5px -5px 10px var(--color-claro);
+}
+
+#contacto .fila .contacto-data h4{
+    transition: .5s;
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: var(--color-gris);
+    
+}
+
+#contacto .fila .contacto-data .icono{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--color-negro);
+    border: 1px solid var(--color-claro);
+    padding: 25px;
+    margin-bottom: 10px;
+}
+
+footer{
+    
+    text-align: center;
+    color: var(--color-gris);
+    font-size: 18px;
+    padding-bottom: 70px;
+}
+
+/* SECCION RESPONSIVE */
+
+ @media(max-width:980px) {
+  
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+        /* right: 80%;
+        margin-top: 30px;
+        margin-left: -250px; */
+    
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 100;
+        top: 55px;
+        background-color: transparent;
+        width: 200px;
+        
+
+    }
+    
+    nav.responsive ul{
+        display: block !important;
+
+    }
+
+    nav.responsive ul li{
+      border-bottom: 2px solid var(--color-gris);
+      max-width: 186px;
+      text-align: left;
+      padding: 10px 0;  
+    }
+    nav.responsive ul li a {
+        color: #ffd13b;
+    }
+}
+
+@media(max-width:700px){
+    .acerca-de-mi .fila{
+        display: flex;
+    }
+    .acerca-de-mi .fila .col{
+        display: flex;
+    }
+
+
+    .portfolio .galeria{
+        display: block;
+        width: 100%;
+    }
+    .portfolio .galeria .proyecto{
+        max-width: 100%;
+    }
+    .portfolio .galeria .proyecto img{
+        width: 100%;
+    }
+    #contacto .fila{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-around;
+        max-width:400px;
+        flex-wrap: wrap;
+        margin-left: 80px;
+    }
+    
+    #contacto .fila .contacto-data{
+        width: 75%;
+        padding: 20px;
+        transition: .7s;
+        
+        
+    }
+    
+    #contacto .fila .contacto-data h4{
+        transition: .9s;
+        font-size: 12px;
+        margin-bottom: 10px;
+        color: var(--color-gris);
+        
+    }
+    
+   
+    
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap'); </style>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- /* MENÚ ENCABEZADO */ -->
+    <div class="contenedor-header">
+        <header>
+            <div>
+                <nav id="nav" class="menu">
+                    <ul>
+                        <li><a href="#home" onclick="seleccionar()">Home</a></li>
+                        <li><a href="#acerca-de-mi" onclick="seleccionar()">Acerca de mí</a></li>
+                        <li><a href="#mis-habilidades" onclick="seleccionar()">Mis Habilidades</a></li>
+                        <li><a href="#experiencia"onclick="seleccionar()">Experiencia</a></li>
+                        <li><a href="#portfolio" onclick="seleccionar()">Portafolio</a></li>
+                        <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                    </ul>
+                </nav>
+<div class="nav-responsive" onclick="mostrarOcultarMenu()">
+    <i class="fa-solid fa-bars"></i>
+</div>
+            </div>
+        </header>
+    </div>
+
+    <!-- /* SECCIÓN HOME */ -->
+    <section id="home" class="home">
+        <div class="contenido-banner">
+           <div class="contenedor-img">
+            <img class="img-desing" src="./images/photo_2023-01-06_23-4430-34-modified.jpeg" alt="">
+           </div> 
+           <h2>Hola, soy Luciano</h2>
+           <h1>Diseñador y desarrollador Web</h1>
+           <div class="redes">
+            <a href="#"><img src="./icons/linkedin.svg" alt=""></a>
+            <a href="#"><img src="./icons/instagram.svg" alt=""></i></a>
+            <a href="#"><img src="./icons/twitter.svg" alt=""></i></a>
+           </div>
+        </div>
+    </section>
+
+    <!-- /* ACERCA DE MÍ */ -->
+<section id="acerca-de-mi" class="acerca-de-mi">
+    <div class="contenido-seccion">
+        <h2>Acerca de mí</h2>
+        <p><span>Hola, me llamo Luciano Facundo Tito Cedrón.</span> Tengo 29 años, soy un estudiante de desarrollo web, actualmente me
+            encuentro cursando en Academlo. Desde pequeño me interesó la computación, pero en mis tiempos, la programación como
+            tal no era muy conocida. En pandemia, un amigo me dijo que me veía condiciones así que probé un poco con JavaScript
+            y me encantó. Hasta ese momento, ya había terminado de cursar y estaba pronto a recibirme de ingeniero ambiental. Me
+            encontraba trabajando como profesor desde 2016 y ya estaba con prácticas profesionales en mi carrera.</p>
+        </div>
+    </section>
+  <!-- /* MIS HABILIDADES */ -->
+            <section id="mis-habilidades" class="mis-habilidades">
+                <h2 class="titulo-seccion">Mis habilidades</h2>
+                <div class="fila">
+                    <div class="habilidades">
+                        <span class="icono"><img src="./icons/mobile.svg" alt=""></span>
+                        <h5>Mobile app desing</h5>
+                    </div>
+                    <div class="habilidades">
+                        <span class="icono"><img src="./icons/motion.svg" alt=""></span>
+                        <h5>Motion Desing</h5>
+                    </div>
+                    
+                    <div class="habilidades">
+                        <span class="icono"><img src="./icons/material.svg" alt=""></span>
+                        <h5>Creación de sistemas de diseño</h5>
+                    </div>
+                    <div class="habilidades">
+                        <span class="icono"><img src="./icons/web.svg" alt=""></span>
+                        <h5>Desarrollo web</h5> 
+                    </div>   
+                    
+                </div>
+            </section>
+
+  <!-- /* EXPERIENCIA */    -->
+
+  <section id="experiencia" class="experiencia">
+    <h2>Experiencia</h2>
+<table>
+    <tr>
+        <td >2016-2018</td>
+        <td>
+            <ul class="charge">Visual designer</ul> 
+            <ul class="company">Wizeline</ul>
+        </td>
+        
+    </tr>
+ 
+    <tr>
+        <td>2018-2019</td>
+        <td>
+            <ul class="charge">Productor designer</ul>
+            <ul class="company">Microsoft</ul>
+        </td>
+        
+    </tr>
+
+    <tr>
+        <td class="last_border">2019-2021</td>
+        <td class="last_border">
+            <ul class="charge">UI Engineer</ul>
+            <ul class="company">Google</ul>
+        </td>
+        
+    </tr>
+  
+    
+</table>
+  </section>
+
+
+  <!--   /* PORTFOLIO */ -->
+
+  <section id="portfolio" class="portfolio">
+    <div class="contenido-seccion">
+        <h2>Portafolio</h2>
+        <div class="galeria">
+            <div class="proyecto">
+                <img  src="./images/ejemplo 1.png" alt="">
+                <div class="overlay">
+                  <h3>Diseño creativo</h3> 
+                  <p>Fotografía</p> 
+                </div>
+            </div> 
+            <div class="proyecto">
+                <img  src="./images/ejemplo 2.png" alt="">
+                <div class="overlay">
+                  <h3>Diseño creativo</h3> 
+                  <p>Fotografía</p> 
+                </div>
+            </div> 
+            <div class="proyecto">
+                <img  src="./images/ejemplo 3.png" alt="">
+                <div class="overlay">
+                  <h3>Diseño creativo</h3> 
+                  <p>Fotografía</p> 
+                </div>
+            </div> 
+        </div>
+    </div>       
+  </section>
+
+  <!-- /*CONTACTO */ -->
+
+  <section id="contacto" class="contacto">
+    <h2 class="titulo-seccion">Contacto</h2>
+    <div class="fila">
+        <div class="contacto-data">
+            <span class="icono"><img src="./icons/phone.svg" alt=""></span>
+            <h4>Número celular</h4>
+            <h4>+543874527977</h4>
+        </div>
+        <div class="contacto-data">
+            <span class="icono"><img src="./icons/mail 1.svg" alt=""></span>
+            <h4>Email</h4>
+            <h4>example@correo.com</h4>
+        </div>
+    </section>
+        
+<footer>  <h5>Hecho con <i class="fa-solid fa-heart"></i> en Academlo</h5></footer>
+
+  
+         
+     <script src="./js/script.js"></script>       
+    
+
+
+</body>
+</html>
