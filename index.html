@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <style> @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap'); </style>
     <link rel="stylesheet" href="./style.css">
+      
     <title>Portfolio</title>
 </head>
 <body>
@@ -14,19 +15,25 @@
     <div class="contenedor-header">
         <header>
             <div>
-                <nav id="nav" class="menu">
-                    <ul>
-                        <li><a href="#home" onclick="seleccionar()">Home</a></li>
-                        <li><a href="#acerca-de-mi" onclick="seleccionar()">Acerca de mí</a></li>
-                        <li><a href="#mis-habilidades" onclick="seleccionar()">Mis Habilidades</a></li>
-                        <li><a href="#experiencia"onclick="seleccionar()">Experiencia</a></li>
-                        <li><a href="#portfolio" onclick="seleccionar()">Portafolio</a></li>
-                        <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                <nav id="nav" class="main-nav">
+                    <ul class="main-menu" id="main-menu">
+                        <li class="main-menu__item"><a class="main-menu__link" href="#home" onclick="seleccionar()">Home</a>
+                        </li>
+                        <li class="main-menu__item"><a class="main-menu__link" href="#acerca-de-mi"
+                                onclick="seleccionar()">Acerca de mí</a></li>
+                        <li class="main-menu__item"><a class="main-menu__link" href="#mis-habilidades"
+                                onclick="seleccionar()">Mis Habilidades</a></li>
+                        <li class="main-menu__item"><a class="main-menu__link" href="#experiencia"
+                                onclick="seleccionar()">Experiencia</a></li>
+                        <li class="main-menu__item"><a class="main-menu__link" href="#portfolio"
+                                onclick="seleccionar()">Portafolio</a></li>
+                        <li class="main-menu__item"><a class="main-menu__link" href="#contacto"
+                                onclick="seleccionar()">Contacto</a></li>
                     </ul>
                 </nav>
-<div class="nav-responsive" onclick="mostrarOcultarMenu()">
-    <i class="fa-solid fa-bars"></i>
-</div>
+                <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
         </header>
     </div>
