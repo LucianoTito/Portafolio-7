@@ -442,9 +442,11 @@ footer{
 @media(max-width:767px){
     .contenedor-header{
         position: fixed;
+        margin: auto;
+        max-width: 350px;
         width: 100%;
         top:0;
-        left: 15px;
+        left: 0px;
         z-index: 100;
     }
    
@@ -459,6 +461,7 @@ footer{
         padding: 25px 10px;
     
     }
+
   
 
     .main-menu {
@@ -466,11 +469,9 @@ footer{
         margin-top: 0;
         margin-bottom: 0;
         padding-left: 0;
-    
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+       
     }
+        
     
     .main-menu__link{
         color: #ffd13b;
@@ -480,6 +481,7 @@ footer{
     
     .main-menu__item{
         padding: 1em;
+        
     }
     
 
