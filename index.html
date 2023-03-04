@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style> @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap'); </style>
     <link rel="stylesheet" href="./style.css">
       
@@ -12,8 +13,7 @@
 </head>
 <body>
     <!-- /* MENÚ ENCABEZADO */ -->
-    <div class="contenedor-header">
-        <header>
+    <header class="contenedor-header"> 
                 <nav id="nav" class="main-nav">
                     <ul class="main-menu" id="main-menu">
                         <li class="main-menu__item"><a class="main-menu__link" href="#home" onclick="seleccionar()">Home</a>
@@ -30,26 +30,28 @@
                                 onclick="seleccionar()">Contacto</a></li>
                     </ul>
                 </nav>
-                <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                 <div class="nav-responsive"  ><!--{onclick="mostrarOcultarMenu()"}  -->
                     <i class="fa-solid fa-bars"></i>
                 </div>
             
-        </header>
-    </div>
+        
+    </header>
 
     <!-- /* SECCIÓN HOME */ -->
     <section id="home" class="home">
-        <div class="contenido-banner">
+        <!-- <div class="contenido-banner"> -->
            <div class="contenedor-img">
             <img class="img-desing" src="./photo_2023-01-06_23-4430-34-modified.jpeg" alt="">
            </div> 
+           
            <h2>Hola, soy Luciano</h2>
            <h1>Diseñador y desarrollador Web</h1>
            <div class="redes">
-            <a href="#"><img src="./linkedin.svg" alt=""></a>
-            <a href="#"><img src="./instagram.svg" alt=""></i></a>
-            <a href="#"><img src="./twitter.svg" alt=""></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://mx.linkedin.com/school/academlo/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+            <a href="https://www.youtube.com/c/academlo/" target="_blank"><i class='bx bxl-youtube' ></i></a>
            </div>
+            
         </div>
     </section>
 
@@ -161,7 +163,7 @@
 
   <section id="contacto" class="contacto">
     <h2 class="titulo-seccion">Contacto</h2>
-    <div class="fila">
+    <div class="fila__contact">
         <div class="contacto-data">
             <span class="icono"><img src="./phone.svg" alt=""></span>
             <h4>Número celular</h4>
