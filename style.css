@@ -414,7 +414,7 @@ footer{
         left: 0;
         }
     
-    .nav-responsive{
+.nav-responsive{
         background-color: #1f1c1c;
         color: var(--color-claro);
         border-radius: 5px;
@@ -423,7 +423,7 @@ footer{
         height: 28px;
     }
 
-    .fa-bars{
+.fa-bars{
         display: block;
     }
 
@@ -481,9 +481,9 @@ position: fixed;
 .img-desing{    
     border: 2px solid #ffd13b;
     display: block;
-    height: 100px;
+    height: 150px;
     margin: auto;
-    margin-top: 7em;
+    margin-top: 3em;
     border-radius: 100%;
 }
 
