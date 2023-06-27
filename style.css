@@ -25,6 +25,7 @@ body{
 .contenedor-header {
 display: flex;
     justify-content: center;
+    background: var(--color-negro);
 
     height: 50px;
     display: flex;
@@ -44,7 +45,7 @@ display: flex;
   }
   
   .main-menu__item {
-    margin: 0 10px;
+    margin: 10px 20px;
   }
   
   .main-menu__link {
@@ -95,6 +96,7 @@ display: flex;
     border: 2px solid #ffd13b;
     display: block;
     margin: auto;
+    width: 300px;
     margin-top: 3em;
     border-radius: 100%;
 }
@@ -488,7 +490,7 @@ position: fixed;
 .img-desing{    
     border: 2px solid #ffd13b;
     display: block;
-    height: 150px;
+    width: 150px;
     margin: auto;
     margin-top: 3em;
     border-radius: 100%;
