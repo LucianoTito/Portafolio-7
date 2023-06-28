@@ -413,20 +413,49 @@ td {
     margin-bottom: 10px;
 }
 
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* FOOTER */
+footer {
+    padding: 20px;
     text-align: center;
+  }
+  
+  footer h5 {
     color: var(--color-gris);
-    font-size: 25px;
-    padding-bottom: 50px;
+    font-size: 22px;
     cursor: pointer;
-}
+  }
+  
+  footer h5 i {
+    margin-left: 5px;
+    font-size: 28px;
+  }
+  
+  footer h5:hover {
+    color: var(--color-claro);
+  }
+  
 
-.bxs-up-arrow-circle{
-    font-size: 25px;
-}
+/*LINK DEL CÓDIGO */
+.link__git {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-claro);
+    color:var(--color-negro);
+    opacity: .75;
+    font-size: 18px;
+    text-decoration:dashed;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .link__git:hover {
+    background-color: var(--color-gris);
+  }
+  
+  .link__git:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--color-claro);
+  }
 
 /* SECCION RESPONSIVE */
 @media(max-width:767px){
@@ -583,7 +612,7 @@ h1{text-align: center;
 
 .fila{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 5em;
 }
 .habilidades{
@@ -599,18 +628,19 @@ h1{text-align: center;
 
 /* PORTFOLIO */
 
-.galeria{
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    flex-direction: column;
-    margin: auto;
-}
-
-.proyecto img {
-    width: 100%;
-    display: block;
-}
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 5px;
+  }
+  
+  .proyecto {
+    position: relative;
+    width: 220px;
+    height: fit-content;
+    height: 220px;
+    cursor: pointer;
+  }
 
 
 /* CONTACTO */
@@ -621,12 +651,12 @@ h1{text-align: center;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    max-width: 767px;
+    max-width: 250px;
 }
 
 .contacto-data{
     width: 100%;
-    padding: 30px;
+    padding: 18px;
     margin: auto;
     margin-top: 1.5em;
     transition: .5s;    
@@ -635,33 +665,13 @@ h1{text-align: center;
     color: var(--color-gris);
     text-decoration: none;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 15px;
     filter: brightness(1.2);
     text-shadow: -6px 2px 15px rgba(230,222,222,0.62);
 }
 }
 
-/*LINK DEL CÓDIGO */
-.link__git {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: var(--color-claro);
-    color:var(--color-negro);
-    opacity: .75;
-    font-size: 18px;
-    text-decoration:dashed;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .link__git:hover {
-    background-color: var(--color-gris);
-  }
-  
-  .link__git:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px var(--color-claro);
-  }
+
   
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
