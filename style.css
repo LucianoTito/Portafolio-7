@@ -657,7 +657,7 @@ body.dark__mode {
         left: 0;
         }
 }
-@media(max-width:767px){
+@media screen and (max-width: 768px){
 
 .contenedor-header {   
         display: flex;
