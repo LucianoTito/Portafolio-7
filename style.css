@@ -664,7 +664,7 @@ body.dark__mode {
         justify-content: flex-end;
         position: fixed;
         height: 40px;
-        width: 90%;
+        width: 100%;
         top: 0;
         left: 0;
         }
