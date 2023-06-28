@@ -356,6 +356,7 @@ td {
     color: var(--color-claro);
     padding: 50px 15px ;
     text-align: center;
+    cursor: pointer;
    
 }
 .titulo-seccion{
@@ -413,11 +414,18 @@ td {
 }
 
 footer{
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     color: var(--color-gris);
-    font-size: 18px;
-    padding-bottom: 70px;
+    font-size: 25px;
+    padding-bottom: 50px;
+    cursor: pointer;
+}
+
+.bxs-up-arrow-circle{
+    font-size: 25px;
 }
 
 /* SECCION RESPONSIVE */
@@ -631,8 +639,30 @@ h1{text-align: center;
     filter: brightness(1.2);
     text-shadow: -6px 2px 15px rgba(230,222,222,0.62);
 }
-
 }
+
+/*LINK DEL CÓDIGO */
+.link__git {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-claro);
+    color:var(--color-negro);
+    opacity: .75;
+    font-size: 18px;
+    text-decoration:dashed;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .link__git:hover {
+    background-color: var(--color-gris);
+  }
+  
+  .link__git:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--color-claro);
+  }
+  
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
