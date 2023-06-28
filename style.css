@@ -582,9 +582,12 @@ body.dark__mode {
 .dark__mode .portfolio {
     color: var(--dark--button-color);
   }
+.dark__mode .galeria a img {
+    opacity: 1;
+}
 .dark__mode .overlay h3{
     color: var(--color-claro);
-    filter: brightness(125%);
+    filter: brightness(125%); 
 }
 .dark__mode .overlay p{
     color:#e2b933;
