@@ -645,6 +645,18 @@ body.dark__mode {
 
 
 /* SECCION RESPONSIVE */
+
+@media screen and (max-width: 480px){
+    .contenedor-header {   
+        display: flex;
+        justify-content: flex-end;
+        position: fixed;
+        height: 40px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        }
+}
 @media(max-width:767px){
 
 .contenedor-header {   
