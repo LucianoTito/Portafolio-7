@@ -1,21 +1,3 @@
-// let menuVisible = false;
-// //Función que oculta o muestra el menú
-// function mostrarOcultarMenu(){
-//     if(menuVisible){
-//         document.getElementById("nav").classList="";
-//         menuVisible = false;
-
-//     }else{
-//         document.getElementById("nav").classList="responsive";
-//         menuVisible = true;
-//     }
-// }
-
-// function seleccionar () {
-//     document.getElementById("nav").classList="";
-//     menuVisible=false;
-// }
-
 const menu = document.querySelector(".main-menu");
 const links = document.querySelectorAll(
   ".main-menu .main-menu__item .main-menu__link"
@@ -50,7 +32,35 @@ function scrollToTop() {
   });
 }
 
-// function mostrarOcultarMenu() {
-//     var menu = document.querySelector('.menu');
-//     menu.classList.toggle('active');
-//   }
+/* DARK MODE */
+const button__dark = document.querySelector("#button__dark-mode");
+const body = document.querySelector("body");
+
+load();
+
+button__dark.addEventListener("click", (e) => {
+  body.classList.toggle("dark__mode");
+  toggleIcon();
+  store(body.classList.contains("dark__mode"));
+});
+
+function load() {
+  const darkmode = localStorage.getItem("dark__mode");
+  if (!darkmode) {
+    store("false");
+  } else if (darkmode == "true") {
+    body.classList.add("darkmode");
+    toggleIcon();
+  }
+}
+
+function store(value) {
+  localStorage.setItem("darkmode", value);
+}
+
+function toggleIcon() {
+  const darkIcon = document.querySelector(".dark-mode-icon");
+  const lightIcon = document.querySelector(".light-mode-icon");
+  darkIcon.classList.toggle("hidden");
+  lightIcon.classList.toggle("hidden");
+}

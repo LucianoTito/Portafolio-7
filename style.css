@@ -14,6 +14,9 @@ html{
     --color-negro:#020403;
     --color-gris:#ADADAD;
     --color-claro: #FFFFFF;
+    --grey: #e6e6e6;   
+    --dark--button-color: hsl(246, 16%, 12%);
+    --dark--body-color: hsl(249, 19%, 14%);
 }
 
 body{
@@ -74,6 +77,52 @@ display: flex;
     cursor: pointer;
     display: none ; 
 } 
+
+/* LIGHT - DARK MODE */
+#button__dark-mode {
+    border: none;
+    padding: 6.5px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    
+  }
+
+#button__dark-mode .bx-moon {
+    color: var(--color-gris);
+    transition: ease .3s;
+  } 
+
+  #button__dark-mode .bx-moon:hover {
+    color: var(--color-claro);
+    filter: brightness(125%); 
+  } 
+  
+  #button__dark-mode .bx-sun {
+    color: var(--color-negro);
+    transition: ease .3s;
+  }
+  #button__dark-mode .bx-sun:hover {
+   color:#e2b933;
+  }
+  
+  #button__dark-mode .light-mode-icon {
+    display: none;
+  }
+  
+   .dark__mode #button__dark-mode .light-mode-icon {
+    display: flex;
+  }  
+  
+   .dark__mode #button__dark-mode .dark-mode-icon {
+    display: none;
+  }
+
+ .dark__mode .main-menu__link:hover {
+    color: #ffd13b;
+    text-shadow: 0px 0px 9px var(--color-gris);
+    transform: scale(1.04);
+  }
+   
   
 /* SECCIÓN HOME */
 .home{
@@ -457,6 +506,141 @@ footer {
     box-shadow: 0 0 0 3px var(--color-claro);
   }
 
+  /* LIGTH MODE */
+
+body.dark__mode {
+    background-color: var(--dark--title-color);
+    color: #e6e6e6;
+    transition: 0.8s;
+}
+#button__dark-mode {
+    background-color: transparent;
+    border: none;
+    color: var(--color-negro);
+    cursor: pointer;
+    font-size: 25px;
+    margin-top: 3px;
+}
+.dark__mode .contenedor-header{
+    background: var(--color-claro);
+}
+.dark__mode .main-menu__link{
+    color: var(--color-negro);
+}
+
+.dark__mode .img-desing{    
+    border: 2px solid var(--dark--body-color);
+}
+
+.dark__mode .home h2{
+    color: var(--dark--button-color);
+}
+
+.dark__mode .home h1{
+    color: var(--dark--button-color);
+}
+
+.dark__mode .bxs-file-pdf {
+    color:  var(--dark--body-color);
+}
+.dark__mode .bxs-file-pdf:hover{
+    color:#e2b933;
+}
+
+.dark__mode .bxl-linkedin{ 
+     color:  var(--dark--body-color);
+    }
+.dark__mode .bxl-linkedin:hover{
+        color:#e2b933;
+    }
+
+/*ACERCA DE MÍ */
+
+.dark__mode .acerca-de-mi{
+    color: var(--dark--button-color);
+}
+
+.dark__mode .contenido-seccion p {
+   color: var(--dark--body-color);
+}
+
+/*MIS HABILIDADES */
+.dark__mode .mis-habilidades{
+    color: var(--dark--button-color);
+}
+.dark__mode .habilidades:hover{
+    box-shadow: 5px 5px 10px var(--dark--body-color), -5px -5px 10px var(--dark--body-color);
+}
+
+
+.dark__mode .habilidades .icon{
+    background-color:#eeca53; 
+}
+
+/* PORTFOLIO */
+
+.dark__mode .portfolio {
+    color: var(--dark--button-color);
+  }
+.dark__mode .overlay h3{
+    color: var(--color-claro);
+    filter: brightness(125%);
+}
+.dark__mode .overlay p{
+    color:#e2b933;
+}
+
+/* CONTACTO */
+
+.dark__mode .titulo-seccion{
+    color: var(--dark--button-color);
+}
+
+.dark__mode .contacto-data a {
+    color: var(--dark--body-color);
+    filter: brightness(1.2);
+    text-shadow: -4px 2px 8px #292828;
+}
+
+.dark__mode .contacto-data:hover{
+    box-shadow: 5px 5px 10px var(--dark--body-color), -5px -5px 10px var(--dark--body-color);
+}
+
+.dark__mode .contacto-data h4{
+    color: var(--dark--body-color);
+}
+
+.dark__mode .contacto-data .icono{
+    background-color: var(--color-negro);
+}
+
+/* FOOTER */
+.dark__mode footer h5 {
+    color: var(--dark--body-color);
+    transition: ease .3s;
+  }
+
+.dark__mode footer h5:hover {
+    color: #e2b933;
+  }
+  
+
+/*LINK DEL CÓDIGO */
+.dark__mode .link__git {
+    background-color: var(--dark--button-color);
+    color: var(--color-claro);
+    transition: background-color 0.3s ease;
+  }
+  
+.dark__mode .link__git:hover {
+    background-color:#e2b933;
+    opacity: .9;
+  }
+  
+
+
+
+
 /* SECCION RESPONSIVE */
 @media(max-width:767px){
 
@@ -630,7 +814,7 @@ h1{text-align: center;
 
 .galeria {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr;
     gap: 5px;
   }
   
