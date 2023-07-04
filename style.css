@@ -478,24 +478,36 @@ td {
 
 /* FOOTER */
 footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
-    text-align: center;
+    
   }
   
   footer h5 {
     color: var(--color-gris);
     font-size: 22px;
     cursor: pointer;
+   
   }
   
-  footer h5 i {
-    margin-left: 5px;
-    font-size: 28px;
-  }
+
   
   footer h5:hover {
     color: var(--color-claro);
   }
+
+.arrow_btn{
+    background-color: transparent;
+    border: none;
+    color: #e2b933;
+    font-size: 25px;
+}
+
+
+
+
   
 
 /*LINK DEL CÓDIGO */
@@ -644,6 +656,7 @@ body.dark__mode {
 .dark__mode footer h5:hover {
     color: #e2b933;
   }
+
   
 
 /*LINK DEL CÓDIGO */
