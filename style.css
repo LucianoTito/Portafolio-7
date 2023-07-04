@@ -677,6 +677,8 @@ body.dark__mode {
 }
 @media screen and (max-width: 768px){
 
+
+
 .contenedor-header {   
         display: flex;
         justify-content: flex-end;
@@ -686,7 +688,9 @@ body.dark__mode {
         top: 0;
         left: 0;
         }
-    
+.dark__mode .contenedor-header{
+    background-color:var(--grey);
+}    
 .nav-responsive{
         background-color: #1f1c1c;
         color: var(--color-claro);
@@ -699,6 +703,7 @@ body.dark__mode {
 .fa-bars{
         display: block;
     }
+
 
 .main-menu{
 position: fixed;
