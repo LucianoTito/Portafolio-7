@@ -17,16 +17,26 @@
     <header class="contenedor-header">
         <nav id="nav" class="main-nav">
             <ul class="main-menu" id="main-menu">
-              <li class="main-menu__item"><a class="main-menu__link" href="#home">Home</a></li>
-              <li class="main-menu__item"><a class="main-menu__link" href="#acerca-de-mi">Acerca de mí</a></li>
-              <li class="main-menu__item"><a class="main-menu__link" href="#mis-habilidades">Mis Habilidades</a></li>      
+              <li class="main-menu__item"><a class="main-menu__link" href="#home" data-section="main-menu" data-value="home"="">Home</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="#acerca-de-mi" data-section="main-menu" data-value="acerca-de-mi">Acerca de mí</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="#mis-habilidades" data-section="main-menu" data-value="mis-habilidades">Mis Habilidades</a></li>      
               <!-- <li class="main-menu__item"><a class="main-menu__link" href="#experiencia">Experiencia</a></li> -->
-              <li class="main-menu__item"><a class="main-menu__link" href="#portfolio">Portafolio</a></li>
-              <li class="main-menu__item"><a class="main-menu__link" href="#contacto">Contacto</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="#portfolio" data-section="main-menu" data-value="portafolio">Portafolio</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="#contacto" data-section="main-menu" data-value="contacto">Contacto</a></li>
               <button id="button__dark-mode">
                 <i class="dark-mode-icon bx bx-moon"></i>
                 <i class="light-mode-icon bx bx-sun"></i>
               </button>
+            
+                <div id="flags" class="flags">
+                    <div class="flags__item" data-language="es">
+                        <img src="/src/icons/es-flag.svg" alt="spain flag">
+                    </div>
+                    <div class="flags__item" data-language="es">
+                        <img src="/src/icons/us-flag.svg" alt="USA flag">
+                    </div>
+                </div>
+            
             </ul>
             
           </nav>
@@ -38,13 +48,12 @@
 
     <!-- /* SECCIÓN HOME */ -->
     <section id="home" class="home">
-        <!-- <div class="contenido-banner"> -->
            <div class="contenedor-img">
             <img class="img-desing" src="/src/images/CV-HD-img.jpg" alt="profile image">
            </div> 
            
            <h2>Luciano Tito Cedrón</h2>
-           <h1>Desarrollador Web Full Stack</h1>
+           <h1 class="profesion" data-section="homes" data-value="profesion">Desarrollador Web Full Stack</h1>
            <div class="redes">
             
             <a href="https://www.linkedin.com/in/luciano-facundo-tito-cedr%C3%B3n-093041261/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
@@ -57,9 +66,9 @@
     <!-- /* ACERCA DE MÍ */ -->
 <section id="acerca-de-mi" class="acerca-de-mi">
     <div class="contenido-seccion">
-        <h2>Acerca de mí</h2>
-        <p>
-    Tengo 29 años, he trabajado en proyectos en los que he aplicado mis conocimientos para desarrollar interfaces de usuario
+        <h2 class="acerca-de-mi__title" data-section="acerca-de-mi" data-value="acerca-de-mi__title">Acerca de mí</h2>
+        <p data-section="acerca-de-mi" data-value="description" class="description">
+    Tengo 30 años, he trabajado en proyectos en los que he aplicado mis conocimientos para desarrollar interfaces de usuario
     atractivas y receptivas utilizando HTML, CSS y JavaScript. Además, estoy familiarizado con el uso de bibliotecas y
     frameworks como React, que me permiten construir aplicaciones web dinámicas e interactivas.
     
@@ -76,7 +85,7 @@
     </section>
   <!-- /* MIS HABILIDADES */ -->
             <section id="mis-habilidades" class="mis-habilidades">
-                <h2 class="titulo-seccion">Mis habilidades</h2>
+                <h2 class="titulo-seccion" data-section="mis-habilidades" data-value="titulo__seccion">Mis habilidades</h2>
                 <div class="fila">
                     <div class="habilidades">
                         <!-- <span class="icono"><img src="./mobile.svg" alt=""></span> -->
@@ -164,7 +173,7 @@
 
   <section id="portfolio" class="portfolio">
     <div class="contenido-seccion">
-      <h2>Portafolio</h2>
+      <h2 class="portfolio-title" data-section="portafolio" data-value="portfolio-title">Portafolio</h2>
       <div class="galeria">
         <a href="https://pokedex-luciano-tito.netlify.app/" target="_blank" class="proyecto">
           <img src="/src/images/pokedex.png" alt="pokedex image">
@@ -190,21 +199,21 @@
         <a href="https://weatherapp-luciano-tito.netlify.app" target="_blank" class="proyecto">
           <img src="/src/images/weatherapp.png" alt="">
           <div class="overlay">
-            <h3>Clima App</h3>
+            <h3 class="weather-app" data-section="portafolio" data-value="weather-app">Clima App</h3>
             <p>React Vite</p>
           </div>
         </a>
         <a href="https://my-birthday-fest.netlify.app/" target="_blank" class="proyecto">
           <img src="/src/images/birthdaycard.png" alt="">
           <div class="overlay">
-            <h3>Tarjeta de invitación</h3>
+            <h3 class="birthday-card" data-section="portafolio" data-value="birthday-card">Tarjeta de invitación</h3>
             <p>HTML, CSS & JavaScript</p>
           </div>
         </a>
         <a href="https://random-phrases-luciano-tito-cedron.netlify.app" target="_blank" class="proyecto">
           <img src="/src/images/randomPhrases.png" alt="">
           <div class="overlay">
-            <h3>Frases Aleatorias</h3>
+            <h3 class="random_phrases" data-section="portafolio" data-value="random_phrases">Frases Aleatorias</h3>
             <p>React Vite</p>
           </div>
         </a>
@@ -216,11 +225,11 @@
  <!-- CONTACTO -->
 
 <section id="contacto" class="contacto">
-    <h2 class="titulo-seccion">Contacto</h2>
+    <h2 class="titulo-seccion" data-section="contacto" data-value="titulo-seccion">Contacto</h2>
     <div class="fila__contact">
       <div class="contacto-data" onclick="redirectToWhatsapp()">
         <span class="icono"><img src="./phone.svg" alt=""></span>
-        <h4>Número celular</h4>
+        <h4 class="contact-number" data-section="contacto" data-value="contact-number">Número celular</h4>
         <a href="https://wa.me/543874527977" target="_blank">+543874527977</a>
       </div>
       <div class="contacto-data" onclick="redirectToEmail()">
@@ -233,12 +242,12 @@
   
         
   <footer>
-    <h5 onclick="scrollToTop()">Subir <i class='bx bxs-up-arrow-circle'></i></h5>
+    <h5  data-section="footer" data-value="footer-up" onclick="scrollToTop()">Subir <i class='bx bxs-up-arrow-circle'></i></h5>
   </footer>
   
 
   
-         <a class= "link__git" href="https://github.com/LucianoTito/Portafolio-7" target="blank">LINK DEL CÓDIGO</a>
+         <a class= "link__git" href="https://github.com/LucianoTito/Portafolio-7" target="blank" data-section="footer" data-value="link__git">LINK DEL CÓDIGO</a>
      <script src="./script.js"></script>       
 
 </body>

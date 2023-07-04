@@ -1,0 +1,39 @@
+{
+    "main-menu":{
+        "home": "Home",
+        "acerca-de-mi": "About me",
+        "mis-habilidades":"My skills",
+        "portafolio":"Portfolio",
+        "contacto":"Contact"
+    },
+
+    "homes":{
+       " profesion": "Full Stack Web Developer"
+    },
+
+    "acerca-de-mi":{
+        "acerca-de-mi__title ": "About me",
+        "description": "I am 30 years old, I have worked on projects where I have applied my knowledge to develop attractive and responsive user interfaces using HTML, CSS and JavaScript. In addition, I am familiar with the use and libraries and frameworks such as React, which allow me to build dynamic and interactive web applications. I also trained in server-side development using Node.js, where I have created Apis and complete web applications. I am comfortable working with databases, implementing business logic and ensuring application security. I enjoy facing new challenges and collaborating in multi-disciplinary teams. Previously I worked in environmental engineering and teaching as a professor. "
+    },
+    "mis-habilidades":{
+        "titulo__seccion": "My skills"
+    },
+    "portafolio":{
+        "portfolio-title": "Portfolio",
+        "weather-app":"Weather App",
+        "birthday-card": "Invitation Card",
+        "random_phrases": "Random Phrases"
+
+    },
+    "contacto":{
+        "titulo-seccion":"Contact",
+        "contact-number":"Cell phone Number"
+    },
+
+    "footer":{
+        "footer-up": "Up",
+        "link__git": "CODE LINK"
+    }
+
+    
+}

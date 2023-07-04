@@ -1,0 +1,39 @@
+{
+    "main-menu":{
+        "home": "Home",
+        "acerca-de-mi": "Acerca de mí",
+        "mis-habilidades":"Mis habilidades",
+        "portafolio":"Portafolio",
+        "contacto":"Contacto"
+    },
+
+    "homes":{
+       " profesion": "Desarrollador Web Full Stack"
+    },
+
+    "acerca-de-mi":{
+        "acerca-de-mi__title ": "Acerca de mí",
+        "description": "Tengo 30 años, he trabajado en proyectos en los que he aplicado mis conocimientos para desarrollar interfaces de usuario atractivas y receptivas utilizando HTML, CSS y JavaScript. Además, estoy familiarizado con el uso y bibliotecas y frameworks como React, que me permiten construir aplicaciones web dinámicas e interactivas. También me formé en el desarrollo del lado del servidor utilizando Node.js, donde he creado Apis y aplicaciones web completas. Me siento cómodo trabajando con bases de datos, implementando lógica empresarial y asegurando la seguridad de las aplicaciones. Disfruto enfrentando nuevos desafíos y colaborando en equipos multidiscilplinarios. Anterior a esto trabajé en el area de la ingeniería ambiental y docencia ejerciendo como profesor. "
+    },
+    "mis-habilidades":{
+        "titulo__seccion": "Mis habilidades"
+    },
+    "portafolio":{
+        "portfolio-title": "Portafolio",
+        "weather-app":"Clima App",
+        "birthday-card": "Tarjeta de invitacion",
+        "random_phrases": "Frases Aleatorias"
+
+    },
+    "contacto":{
+        "titulo-seccion":"Contacto",
+        "contact-number":"Número celular"
+    },
+
+    "footer":{
+        "footer-up": "Subir",
+        "link__git": "LINK DEL CÓDIGO"
+    }
+
+    
+}
