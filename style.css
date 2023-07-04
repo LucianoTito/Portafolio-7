@@ -15,8 +15,8 @@ html{
     --color-gris:#ADADAD;
     --color-claro: #FFFFFF;
     --grey: #e6e6e6;   
-    --dark--button-color: hsl(246, 16%, 12%);
-    --dark--body-color: hsl(249, 19%, 14%);
+    --dark-button-color: hsl(246, 16%, 12%);
+    --dark-body-color: hsl(249, 19%, 14%);
 }
 
 body{
@@ -64,6 +64,18 @@ display: flex;
     color: #ffd13b;
     text-shadow: 0px 0px 8px #ffffffda;
     transform: scale(1.05);
+  }
+
+  .flags{
+    width: 76px;
+    display: flex; 
+    align-items:flex-end;
+    justify-content: space-between;
+    background: transparent;
+    margin-bottom: 7px;
+  }
+  .flags__item{
+    width: 30px;
   }
   /*MENU RESPONSIVE */
  .nav-responsive {
@@ -123,16 +135,7 @@ display: flex;
     transform: scale(1.04);
   }
 
-  .flags{
-    width: 75px;
-    display: flex; 
-    align-items:flex-end;
-    justify-content: space-between;
-    background: transparent;
-  }
-  .flags__item{
-    width: 30px;
-  }
+
    
   
 /* SECCIÓN HOME */
@@ -520,7 +523,7 @@ footer {
   /* LIGTH MODE */
 
 body.dark__mode {
-    background-color: var(--dark--title-color);
+    background-color: var(--grey);
     color: #e6e6e6;
     transition: 0.8s;
 }
@@ -532,6 +535,10 @@ body.dark__mode {
     font-size: 25px;
     margin-top: 3px;
 }
+.dark__mode .flags{
+
+    margin-bottom: 4.5px;
+  }
 .dark__mode .contenedor-header{
     background: var(--color-claro);
 }
@@ -540,26 +547,26 @@ body.dark__mode {
 }
 
 .dark__mode .img-desing{    
-    border: 2px solid var(--dark--body-color);
+    border: 2px solid var(--dark-body-color);
 }
 
 .dark__mode .home h2{
-    color: var(--dark--button-color);
+    color: var(--dark-button-color);
 }
 
 .dark__mode .home h1{
-    color: var(--dark--button-color);
+    color: var(--dark-button-color);
 }
 
 .dark__mode .bxs-file-pdf {
-    color:  var(--dark--body-color);
+    color:  var(--dark-body-color);
 }
 .dark__mode .bxs-file-pdf:hover{
     color:#e2b933;
 }
 
 .dark__mode .bxl-linkedin{ 
-     color:  var(--dark--body-color);
+     color:  var(--dark-body-color);
     }
 .dark__mode .bxl-linkedin:hover{
         color:#e2b933;
@@ -568,19 +575,19 @@ body.dark__mode {
 /*ACERCA DE MÍ */
 
 .dark__mode .acerca-de-mi{
-    color: var(--dark--button-color);
+    color: var(--dark-button-color);
 }
 
 .dark__mode .contenido-seccion p {
-   color: var(--dark--body-color);
+   color: var(--dark-body-color);
 }
 
 /*MIS HABILIDADES */
 .dark__mode .mis-habilidades{
-    color: var(--dark--button-color);
+    color: var(--dark-button-color);
 }
 .dark__mode .habilidades:hover{
-    box-shadow: 5px 5px 10px var(--dark--body-color), -5px -5px 10px var(--dark--body-color);
+    box-shadow: 5px 5px 10px var(--dark-body-color), -5px -5px 10px var(--dark-body-color);
 }
 
 
@@ -591,7 +598,7 @@ body.dark__mode {
 /* PORTFOLIO */
 
 .dark__mode .portfolio {
-    color: var(--dark--button-color);
+    color: var(--dark-button-color);
   }
 .dark__mode .galeria a img {
     opacity: 1;
@@ -607,21 +614,21 @@ body.dark__mode {
 /* CONTACTO */
 
 .dark__mode .titulo-seccion{
-    color: var(--dark--button-color);
+    color: var(--dark-button-color);
 }
 
 .dark__mode .contacto-data a {
-    color: var(--dark--body-color);
+    color: var(--dark-body-color);
     filter: brightness(1.2);
     text-shadow: -4px 2px 8px #292828;
 }
 
 .dark__mode .contacto-data:hover{
-    box-shadow: 5px 5px 10px var(--dark--body-color), -5px -5px 10px var(--dark--body-color);
+    box-shadow: 5px 5px 10px var(--dark-body-color), -5px -5px 10px var(--dark-body-color);
 }
 
 .dark__mode .contacto-data h4{
-    color: var(--dark--body-color);
+    color: var(--dark-body-color);
 }
 
 .dark__mode .contacto-data .icono{
@@ -630,7 +637,7 @@ body.dark__mode {
 
 /* FOOTER */
 .dark__mode footer h5 {
-    color: var(--dark--body-color);
+    color: var(--dark-body-color);
     transition: ease .3s;
   }
 
@@ -641,7 +648,7 @@ body.dark__mode {
 
 /*LINK DEL CÓDIGO */
 .dark__mode .link__git {
-    background-color: var(--dark--button-color);
+    background-color: var(--dark-button-color);
     color: var(--color-claro);
     transition: background-color 0.3s ease;
   }
@@ -823,10 +830,10 @@ h1{text-align: center;
 .fila{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5em;
+    gap: 1em;
 }
 .habilidades{
-    width: 250px;
+    width: 150px;
     padding: 15px;
     transition: .5s;   
 }
@@ -875,7 +882,7 @@ h1{text-align: center;
     color: var(--color-gris);
     text-decoration: none;
     font-weight: bolder;
-    font-size: 15px;
+    font-size: 12px;
     filter: brightness(1.2);
     text-shadow: -6px 2px 15px rgba(230,222,222,0.62);
 }
