@@ -510,7 +510,7 @@ footer {
 
 /*LINK DEL CÓDIGO */
 
-.link__git a {
+.link__git  {
     
     padding: 10px 20px;
     background-color: var(--color-claro);
@@ -522,11 +522,11 @@ footer {
     transition: background-color 0.3s ease;
   }
   
-  .link__git:hover a {
+  .link__git:hover  {
     background-color: var(--color-gris);
   }
   
-  .link__git:focus  a{
+  .link__git:focus  {
     outline: none;
     box-shadow: 0 0 0 3px var(--color-claro);
   }
