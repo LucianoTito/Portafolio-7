@@ -480,7 +480,7 @@ td {
 footer {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 20px;
     
   }
@@ -489,7 +489,6 @@ footer {
     color: var(--color-gris);
     font-size: 22px;
     cursor: pointer;
-   
   }
   
 
@@ -507,12 +506,12 @@ footer {
 
 
 
-
   
 
 /*LINK DEL CÓDIGO */
-.link__git {
-    display: inline-block;
+
+.link__git a {
+    
     padding: 10px 20px;
     background-color: var(--color-claro);
     color:var(--color-negro);
@@ -523,11 +522,11 @@ footer {
     transition: background-color 0.3s ease;
   }
   
-  .link__git:hover {
+  .link__git:hover a {
     background-color: var(--color-gris);
   }
   
-  .link__git:focus {
+  .link__git:focus  a{
     outline: none;
     box-shadow: 0 0 0 3px var(--color-claro);
   }
