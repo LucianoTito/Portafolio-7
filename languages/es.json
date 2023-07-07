@@ -28,11 +28,18 @@
     },
     "contacto":{
         "titulo-seccion":"Contacto",
-        "contact-number":"Número celular"
+        "contact-number":"Número celular",
+        "form-seccion": "Si quieres dejarme algún mensaje...",
+        "name": "Nombre",
+        "phone": "Ingresa tu teléfono",
+        "email": "Ingresa tu email",
+        "message": "Mensaje",
+        "contact-description": "Escribe aquí... Cuando oprimas enviar, se abrirá una ventana de confirmación, hacer click en: 'no soy un robot' para confirmar el envío del mensaje.",
+        "button": "Enviar"
     },
 
     "footer":{
-        "footer-up": "Subir",
+        "footer-up": "Subir 🔼",
         "link__git": "LINK DEL CÓDIGO"
     }
 

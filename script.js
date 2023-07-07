@@ -78,7 +78,16 @@ const changeLanguage = async (language) => {
       const section = textToChange.dataset.section;
       const value = textToChange.dataset.value;
 
-      textToChange.innerHTML = texts[section][value];
+      if (textToChange.tagName === "INPUT" && textToChange.type === "submit") {
+        textToChange.value = texts[section][value];
+      } else if (
+        textToChange.tagName === "INPUT" ||
+        textToChange.tagName === "TEXTAREA"
+      ) {
+        textToChange.placeholder = texts[section][value];
+      } else {
+        textToChange.innerHTML = texts[section][value];
+      }
     }
   } catch (error) {
     console.error("Error al cambiar el idioma:", error);

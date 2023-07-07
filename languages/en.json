@@ -27,11 +27,18 @@
     },
     "contacto":{
         "titulo-seccion":"Contact",
-        "contact-number":"Cell phone Number"
+        "contact-number":"Cell phone Number",
+        "form-seccion": "If you want to leave me a message...",
+        "name": "Name",
+        "phone": "Enter your phone",
+        "email": "Enter your email",
+        "message": "Message",
+        "contact-description": "Type here... When you press send, a confirmation window will open, click on: 'I am not a robot' to confirm sending the message.",
+        "button": "Send"
     },
 
     "footer":{
-        "footer-up": "Up",
+        "footer-up": "Up 🔼",
         "link__git": "CODE LINK"
     }
 
