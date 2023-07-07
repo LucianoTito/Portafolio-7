@@ -564,7 +564,7 @@ td {
 footer {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 20px;
     
   }
@@ -586,6 +586,8 @@ footer {
     border: none;
     color: #e2b933;
     font-size: 25px;
+    margin-left: 3px;
+    margin-top: 4px;
 }
 
 
