@@ -589,7 +589,9 @@ footer {
     margin-left: 3px;
     margin-top: 4px;
 }
-
+.arrow_btn:hover{
+    filter: brightness(1.15);
+}
 
 
   
