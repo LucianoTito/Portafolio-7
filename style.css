@@ -476,6 +476,90 @@ td {
     margin-bottom: 10px;
 }
 
+/*FORMULARIO DE CONTACTO */
+.contact__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    color: var(--color-claro);
+  }
+  
+  .contact__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .contact__name, .contact__phone, .contact__email, .contact__msg{
+    margin-top: 2em;
+  }
+
+
+
+#nombre, #email, #telefono{
+    width: 70%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--color-gris);
+    transition: ease 0.5s;
+    padding: 3px;
+   
+} 
+
+
+#nombre:focus,
+#telefono:focus,
+#email:focus
+{
+    outline: none;
+    color: var(--color-claro);
+    border-bottom: 1px solid var(--color-claro);
+    filter: brightness(1.1); 
+    box-shadow: 0px 4px 6px 0px var(--color-claro);
+    
+   
+  }
+  
+
+ #mensaje{
+    width: 70%;
+    height: 150px;
+    background: transparent;
+    outline: none;
+    border: none;
+    box-shadow: 0px .5px .5px 0px var(--color-claro);
+    margin-top: 5px;
+    padding: 3px;
+    color: var(--color-claro);
+    transition: ease 0.5s;
+    
+  }
+
+  #mensaje:focus{
+    box-shadow: 0px 2px 4px 0px var(--color-claro);
+  }
+
+
+  .send__input {
+    width: 30%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color:#292828;
+    color: var(--color-claro);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .send__input:hover {
+    filter: brightness(150%);
+    box-shadow: 5px 5px 10px var(--color-claro), -5px -5px 10px var(--color-claro);
+  }
+  
+  
+
 /* FOOTER */
 footer {
     display: flex;
@@ -531,7 +615,7 @@ footer {
     box-shadow: 0 0 0 3px var(--color-claro);
   }
 
-  /* LIGTH MODE */
+  /*----- LIGTH MODE ----- */
 
 body.dark__mode {
     background-color: var(--grey);
@@ -645,6 +729,61 @@ body.dark__mode {
 .dark__mode .contacto-data .icono{
     background-color: var(--color-negro);
 }
+
+/*FORMULARIO DE CONTACTO */
+.dark__mode .contact__container {
+    color: var(--dark-body-color);
+  }
+
+.dark__mode #nombre,
+#email,
+#telefono {
+    padding: 3px;
+    border-bottom: 1px solid var(--dark-button-color);
+    transition: ease 0.3s;
+}
+
+.dark__mode #nombre:focus,
+#telefono:focus,
+#email:focus
+{
+    outline: none;
+    border-bottom: 1px solid var(--dark-body-color);
+    filter: brightness(1.1);
+    box-shadow: 0px 2px 4px 0px var(--dark-body-color);
+    color: var(--dark-body-color);
+   
+  }
+  
+
+.dark__mode #mensaje {
+    padding: 3px;
+    color: var(--dark-body-color);
+    outline: none;
+    border: inset .5px;
+    transition: ease 0.3s;
+}
+.dark__mode #mensaje:focus{
+    box-shadow: 0px 2px 4px 0px var(--dark-body-color);
+}
+
+.dark__mode   .send__input {
+    width: 30%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color:#e2b933;
+    color: var(--dark-button-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+.dark__mode   .send__input:hover {
+    filter: brightness(110%);
+    box-shadow: 5px 5px 10px var(--color-claro), -5px -5px 10px var(--color-claro);
+    font-weight: bold;
+  }
+  
 
 /* FOOTER */
 .dark__mode footer h5 {
