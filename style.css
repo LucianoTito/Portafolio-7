@@ -24,6 +24,35 @@ body{
 
 }
 
+/*EFECTO DE ESTRELLAS */
+  .space {
+    --size: 2px;
+    --space-layer: 
+      4vw 50vh 0 #fff,
+      18vw 88vh 0 #fff,
+      73vw 14vh 0 #fff;
+    
+    width: var(--size);
+    height: var(--size);
+    background: white;
+    box-shadow: var(--space-layer);
+    position: absolute ;
+    top: 0;
+    left: 0;
+    opacity: 0.75;
+    border-radius: 50%;
+  }
+  
+  .space {
+     animation: move var(--duration) linear infinite;
+  }
+  
+  @keyframes move {
+    from { transform: translateY(0); }
+    to { transform: translateY(-100vh); }
+  }
+
+
 /*MENÚ*/
 .contenedor-header {
 display: flex;
