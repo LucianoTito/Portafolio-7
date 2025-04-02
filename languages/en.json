@@ -10,11 +10,10 @@
     "homes":{
        "profesion": "Full Stack Web Developer"
     },
-
-    "acerca-de-mi":{
-        "acerca-de-mi__title": "About me",
-        "description": "I am 30 years old, I have worked on projects where I have applied my knowledge to develop attractive and responsive user interfaces using HTML, CSS and JavaScript. In addition, I am familiar with the use and libraries and frameworks such as React, which allow me to build dynamic and interactive web applications. I also trained in server-side development using Node.js, where I have created Apis and complete web applications. I am comfortable working with databases, implementing business logic and ensuring application security. I enjoy facing new challenges and collaborating in multi-disciplinary teams. Previously I worked in environmental engineering and teaching as a professor. "
-    },
+"acerca-de-mi": {
+    "acerca-de-mi__title": "About me",
+    "description": "I am a 32 year old Full Stack Web Developer. I have worked on projects where I have applied my knowledge to create attractive and responsive user interfaces using HTML, CSS and JavaScript.\n\nMy experience includes the use of libraries and frameworks such as React to develop web applications. On the backend, I specialize in Node.js, where I have developed APIs and complete web applications, integrating databases and applying business logic.\n\nI make sure to implement the best security practices to ensure the integrity of the applications. Currently, I am studying a University Degree in Programming at the National Technological University, which allows me to continue expanding my skills and knowledge in the field of technology."
+},
     "mis-habilidades":{
         "titulo__seccion": "My skills"
     },
