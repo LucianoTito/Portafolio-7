@@ -717,6 +717,12 @@ body.dark__mode {
 .dark__mode .bxl-linkedin:hover{
         color:#e2b933;
     }
+.dark__mode .bxl-github {
+    color: var(--dark-body-color);
+}
+.dark__mode .bxl-github:hover{
+    color: #e2b933;
+}
 
 /*ACERCA DE MÍ */
 
@@ -726,6 +732,10 @@ body.dark__mode {
 
 .dark__mode .contenido-seccion p {
    color: var(--dark-body-color);
+}
+
+.dark__mode .acerca-de-mi h2 {
+    color: var(--dark-button-color);
 }
 
 /*MIS HABILIDADES */
