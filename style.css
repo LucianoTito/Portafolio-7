@@ -271,6 +271,7 @@ h1{
     font-weight: 420;
     padding: 15px ;
     margin-bottom: 1em;
+    color: var(--color-claro);
 }
 
 .contenido-seccion p {
