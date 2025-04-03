@@ -239,6 +239,13 @@ h1{
 .bxl-linkedin:hover{
     color:#e2b933;
 }
+.bxl-github{ 
+    font-size: 1.5em;
+     color:  var(--color-gris);
+    }
+.bxl-github:hover{
+    color:#e2b933;
+};
 
 
 
