@@ -166,23 +166,19 @@
     </div>
     
     <form class="contact__container" action="https://formsubmit.co/lucianotitocedron@gmail.com" method="post">
-      <h2 class="contact__title" data-section="contacto" data-value="form-seccion"  >Si quieres dejarme algún mensaje...</h2>
-      <label class="contact__name" for="nombre" data-section="contacto" data-value="name" >Nombre:</label>
+      <h2 class="contact__title" data-section="contacto" data-value="form-seccion">Si quieres dejarme algún mensaje...</h2>
+      
+      <label class="contact__name" for="nombre" data-section="contacto" data-value="name">Nombre:</label>
       <input type="text" id="nombre" name="nombre" required>
-    
-      <label class="contact__phone" for="telefono" data-section="contacto" data-value="contact-number" >Número celular:</label>
+      <span id="error-nombre" class="error-msg"></span> <label class="contact__phone" for="telefono" data-section="contacto" data-value="contact-number">Número celular:</label>
       <input type="tel" id="telefono" name="telefono" data-section="contacto" data-value="phone" placeholder="Ingresa tu teléfono" required>
-    
-      <label class="contact__email" for="email">Email:</label>
+      <span id="error-telefono" class="error-msg"></span> <label class="contact__email" for="email">Email:</label>
       <input type="email" id="email" name="email" data-section="contacto" data-value="email" placeholder="Ingresa tu email" required>
-    
-      <label class="contact__msg" for="mensaje" data-section="contacto" data-value="message" >Mensaje:</label>
-      <textarea  data-section="contacto" data-value="contact-description" placeholder="Escribe aquí... Cuando oprimas enviar, se abrirá una ventana de confirmación, hacer click en: 'no soy un robot' para confirmar el envío del mensaje." id="mensaje" name="mensaje" required></textarea>
-    
-      <input class="send__input" type="submit" data-section="contacto" data-value="button"  value="Enviar"> 
+      <span id="error-email" class="error-msg"></span> <label class="contact__msg" for="mensaje" data-section="contacto" data-value="message">Mensaje:</label>
+      <textarea data-section="contacto" data-value="contact-description" placeholder="Escribe aquí..." id="mensaje" name="mensaje" required></textarea>
+      <span id="error-mensaje" class="error-msg"></span> <input class="send__input" type="submit" data-section="contacto" data-value="button" value="Enviar"> 
     </form>
-
-  </section>
+</section>
 
   
 <!-- FOOTER -->

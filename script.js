@@ -119,3 +119,70 @@ const generateSpaceLayer = (size, selector, totalStars, duration) => {
 generateSpaceLayer("2px", ".space-1", 350, "25s");
 generateSpaceLayer("2.5px", ".space-2", 200, "20s");
 generateSpaceLayer("4px", ".space-3", 25, "15s");
+
+
+//Validaciones de formulario
+const form = document.querySelector('.contact__container');
+const nombre = document.querySelector('#nombre');
+const email = document.querySelector('#email');
+const telefono = document.querySelector('#telefono');
+const mensaje = document.querySelector('#mensaje');
+
+form.addEventListener('submit', (e) => {
+    let isValid = true;
+
+    // 1. Validar Nombre (que no sean solo espacios)
+    if (nombre.value.trim().length < 3) {
+        showError(nombre, "El nombre debe tener al menos 3 caracteres.");
+        isValid = false;
+    } else {
+        hideError(nombre);
+    }
+
+    // 2. Validar Email con Regex
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email.value)) {
+        showError(email, "Ingresa un correo electrónico válido.");
+        isValid = false;
+    } else {
+        hideError(email);
+    }
+
+    // 3. Validar Teléfono (mínimo 8 dígitos numéricos)
+    if (telefono.value.trim().length < 8) {
+        showError(telefono, "Ingresa un número de teléfono válido, debe tener al menos 8 dígitos.");
+        isValid = false;
+    } else {
+        hideError(telefono);
+    }
+
+    // 4. Validar Mensaje
+    if (mensaje.value.trim().length < 10) {
+        showError(mensaje, "El mensaje es demasiado corto (mínimo 10 caracteres).");
+        isValid = false;
+    } else {
+        hideError(mensaje);
+    }
+
+    // Si algo no es válido, detenemos el envío a FormSubmit
+    if (!isValid) {
+        e.preventDefault();
+    }
+});
+
+function showError(input, message) {
+    const errorSpan = document.getElementById(`error-${input.id}`);
+    input.classList.add('invalid');
+    if (errorSpan) {
+        errorSpan.textContent = message;
+        errorSpan.style.display = 'block';
+    }
+}
+
+function hideError(input) {
+    const errorSpan = document.getElementById(`error-${input.id}`);
+    input.classList.remove('invalid');
+    if (errorSpan) {
+        errorSpan.style.display = 'none';
+    }
+}

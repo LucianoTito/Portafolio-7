@@ -522,7 +522,19 @@ td {
     padding: 25px;
     margin-bottom: 10px;
 }
+/*VALIDACIONES DE CONTACTO */
+.error-msg {
+    color: #ff4d4d; /* Un rojo que resalte sobre tu fondo oscuro */
+    font-size: 0.85rem;
+    margin-top: 5px;
+    display: none; /* JS lo activará cuando sea necesario */
+    font-weight: 500;
+}
 
+
+input.invalid, textarea.invalid {
+    border-bottom: 2px solid #ff4d4d !important;
+}
 /*FORMULARIO DE CONTACTO */
 .contact__container {
     display: flex;
