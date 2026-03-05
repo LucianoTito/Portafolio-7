@@ -553,6 +553,7 @@ input.invalid, textarea.invalid {
 
   .contact__name, .contact__phone, .contact__email, .contact__msg{
     margin-top: 2em;
+    color: #fff;
   }
 
 
