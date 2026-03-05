@@ -815,6 +815,8 @@ body.dark__mode {
     padding: 3px;
     border-bottom: 1px solid var(--dark-button-color);
     transition: ease 0.3s;
+    color:#e2b933
+    
 }
 
 .dark__mode #nombre:focus,
@@ -825,7 +827,7 @@ body.dark__mode {
     border-bottom: 1px solid var(--dark-body-color);
     filter: brightness(1.1);
     box-shadow: 0px 2px 4px 0px var(--dark-body-color);
-    color: var(--dark-body-color);
+    color: var(--color-claro);
    
   }
   
@@ -857,7 +859,7 @@ body.dark__mode {
     box-shadow: 5px 5px 10px var(--color-claro), -5px -5px 10px var(--color-claro);
     font-weight: bold;
   }
-  
+
 
 /* FOOTER */
 .dark__mode footer h5 {
